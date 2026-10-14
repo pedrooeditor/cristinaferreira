@@ -1,34 +1,39 @@
-# Cristina Ferreira · novo site
+# Cristina Ferreira · Psicopedagogia
 
-Site institucional estático para Cristina Ferreira, desenvolvido a partir do conteúdo e dos arquivos divulgados em https://www.cristinaferreira.com.br/ e suas páginas de apresentação, contato e avaliações, consultadas em 14/10/2026.
+Nova página institucional da Cristina Ferreira, com atuação em **psicopedagogia confirmada pelo cliente em 14/10/2026**. Substitui a proposta inicial de terapia integrativa no mesmo repositório, nos mesmos arquivos e na mesma identidade do Sites.
 
-## Direção do projeto
+## Direção visual
 
-A identidade mantém a logo original e reúne vinho e verde suave da marca com marrom, pêssego e uma base clara. O objetivo é explicar o atendimento com acolhimento, organizar os motivos de confiança e facilitar um primeiro contato.
+O conceito é **caminhos da aprendizagem**. A página combina vinho, marfim e verde suave, tipografia Manrope com Fraunces, foto real da profissional e peças tipográficas em movimento. O símbolo da marca original é preservado por recorte visual em CSS; o nome e a nova área são escritos em HTML.
 
-A página segue esta progressão: apresentação → identificação com as necessidades → áreas de atendimento → profissional e formação → formatos e primeiros passos → relatos → palestras e participações → dúvidas → contato.
+A narrativa segue: apresentação → olhar para o aprender → cenas do cotidiano → aspectos da aprendizagem → profissional → primeiro contato e próximos passos → dúvidas → WhatsApp.
 
-- Conteúdo em português do Brasil, sem promessas de resultados.
-- Fotos e screenshots de relatos do próprio site, sem nomes ou depoimentos inventados.
-- Atendimento apresentado como terapia integrativa e psicanálise, conforme o site de origem; não é apresentado como psicologia ou psicopedagogia.
-- WhatsApp real: +55 (11) 96310-6711, com mensagens específicas para cada contexto.
-- Menus para celular, relatos com rolagem e controles, FAQ nativo, navegação por teclado, preferência por movimento reduzido e chamada de contato móvel.
-- Imagens locais; sem dependências de framework, fontes externas, formulários ou rastreamento de marketing.
+## Interações
 
-## Arquivos
+- Abertura com entradas de texto, peças em movimento, inclinação sutil do retrato e selo circular.
+- Linha que se desenha durante a rolagem e momento de leitura com composição fixa no computador.
+- Seção interativa com quatro caminhos, navegação por teclado e mensagens de WhatsApp correspondentes.
+- Sequência de conteúdo com sobreposição de cartões no computador; fluxo vertical no celular.
+- Seleção do motivo de contato para personalizar a mensagem, sem formulário nem envio automático.
+- Animações acionadas pela visibilidade, parallax moderado, indicador de leitura e pausas quando a aba do navegador está em segundo plano.
+- Preferência de movimento reduzido, controle para pausar animações e navegação acessível.
 
-O site pronto está em `dist/`: `index.html`, `styles.css`, `script.js`, `privacidade.html` e `assets/`. A pasta `.openai/` identifica a hospedagem da proposta no Sites.
+O scroll continua nativo. CSS e JavaScript locais, sem frameworks ou bibliotecas de animação. As fontes são hospedadas no projeto com suas licenças OFL.
 
-## GitHub Pages
+## Conteúdo e limites da proposta
 
-O repositório contém um workflow de publicação da pasta `dist/` no GitHub Pages. Em **Settings → Pages → Build and deployment**, selecione **GitHub Actions** e execute o workflow **Publicar site** caso a publicação ainda não esteja configurada. A URL usual é https://pedrooeditor.github.io/cristinaferreira/ . A configuração e o resultado da hospedagem precisam ser verificados separadamente; o código por si só não significa que esse endereço já esteja no ar.
+Nome, retrato, símbolo da marca, telefone e perfis sociais usam as informações fornecidas no projeto anterior. A psicopedagogia foi confirmada pelo cliente. A descrição geral de aprendizagem e contexto foi preparada a partir de referências institucionais da ABPp.
 
-## Revisão com a profissional
+Não foram transferidos depoimentos da terapia para a nova área. Não há números de atendimentos, diplomas, especializações, registros associativos, diagnósticos, promessas de desempenho escolar ou resultados atribuídos à psicopedagogia sem confirmação.
 
-Os detalhes comerciais, o endereço presencial, os horários e a duração das sessões não estavam informados de forma completa nas páginas consultadas. O site direciona essas dúvidas ao WhatsApp e não inventa esses dados. A formação e o registro ABRATH foram preservados conforme divulgados no site original; a especialização em reprogramação neurolinguística não foi apresentada como concluída.
+Os temas apresentados são aspectos gerais da aprendizagem. Público atendido, modalidades, endereço, horários, valores e serviços específicos precisam ser alinhados com a profissional; a página direciona essas dúvidas ao WhatsApp. O objetivo é disponibilizar uma proposta geral concreta para avaliação e ajustes comerciais.
 
-A proposta usa `noindex, follow` para não disputar indexação com o site oficial durante a avaliação. Ao publicar a versão aprovada no domínio definitivo, revise os metadados absolutos, altere a diretiva de indexação e confirme o conteúdo, a disponibilidade presencial, os contatos, a autorização para os relatos e a informação de privacidade com a profissional. A hospedagem atual do domínio dela não é substituída por este projeto.
+## Arquivos e publicação
+
+Os arquivos continuam em `dist/index.html`, `dist/styles.css`, `dist/script.js`, `dist/privacidade.html` e `dist/assets/`. `.openai/hosting.json` preserva a identidade de hospedagem. O workflow `.github/workflows/pages.yml` publica `dist/` quando o GitHub Pages está configurado com **GitHub Actions** em Settings → Pages.
+
+O código da proposta usa `noindex, follow`. Ao aprovar e publicar no domínio definitivo, revisar as informações específicas, os metadados absolutos e a diretiva de indexação. A hospedagem do domínio original da profissional não é substituída por este projeto.
 
 ## Verificação
 
-O projeto permite verificar a sintaxe do JavaScript com `node --check dist/script.js`. A revisão deve conferir os caminhos locais, as âncoras, a identificação dos botões e o número dos links do WhatsApp. Para uma revisão visual e de interação, abrir `dist/index.html` no navegador em computador e celular.
+Sintaxe do JavaScript, estrutura HTML, referências locais, fontes, âncoras, controles acessíveis e contrastes são verificados antes da entrega. Testes em DOM simulado cobrem seleção dos caminhos por clique e teclado, menu, motivo de contato, FAQ e pausa das animações. Uma simulação de DOM não verifica aparência nem todas as interações reais de scroll; a revisão completa em navegador deve ser feita no link publicado.
