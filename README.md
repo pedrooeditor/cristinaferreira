@@ -32,6 +32,8 @@ Os temas apresentados são aspectos gerais da aprendizagem. Público atendido, m
 
 Os arquivos continuam em `dist/index.html`, `dist/styles.css`, `dist/script.js`, `dist/privacidade.html` e `dist/assets/`. `.openai/hosting.json` preserva a identidade de hospedagem. O workflow `.github/workflows/pages.yml` publica `dist/` quando o GitHub Pages está configurado com **GitHub Actions** em Settings → Pages.
 
+Há também entradas `index.html` e `privacidade.html` na raiz, espelhadas a partir de `dist/` com caminhos ajustados, e `.nojekyll`. Elas mantêm o endereço principal funcional quando o Pages está configurado para publicar a raiz da branch. Ao editar o conteúdo em `dist/`, sincronizar essas duas entradas antes de atualizar a branch.
+
 O código da proposta usa `noindex, follow`. Ao aprovar e publicar no domínio definitivo, revisar as informações específicas, os metadados absolutos e a diretiva de indexação. A hospedagem do domínio original da profissional não é substituída por este projeto.
 
 ## Verificação
